@@ -66,6 +66,7 @@ _**TASK 2: Apply the filter; what is the name of the customer-related file exfil
 In this task, i make use of te same query but filter ftp that contains root instead  _**ftp contains "root"**_ as shown below
 
 <img width="480" height="324" alt="Image" src="https://github.com/user-attachments/assets/511beec7-a068-485f-bfba-208f0575b2e6" />
+
 i right-clicked and and follow then TCP stream  as shown below the file related to this exfilteration  is  _customer_data.xlsx_ as shown below:
 
 <img width="493" height="391" alt="Image" src="https://github.com/user-attachments/assets/6e64de30-7323-4972-a51a-08af8951a441" />
@@ -101,6 +102,7 @@ POST uploads to external servers: Bulk data is sent to attacker-controlled hosts
 In this task sine i know data exfilteration can happen through http POST i will make use of a query to filter the pavker with more frame lenght that indivcate suspicious data exfilteration  with _**http.request.method =="POST and frame.len >500**_
 
 <img width="482" height="413" alt="Image" src="https://github.com/user-attachments/assets/b16acefa-77e8-4896-86c4-6a72535501de" />
+
 This show many filter and i adjust the packet to 75o to reduce the amont of packet to investigate   _**http.request.method =="POST and frame.len >750**_
 
 <img width="479" height="385" alt="Image" src="https://github.com/user-attachments/assets/6b863dd0-c14e-4ab4-b82c-a55e4d1e5298" />
