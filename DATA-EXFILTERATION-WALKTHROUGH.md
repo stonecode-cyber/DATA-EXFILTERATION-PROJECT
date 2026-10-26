@@ -1,11 +1,12 @@
 
 Data exfiltration is the unauthorized transfer of sensitive data from a computer or other device. It's a primary objective for attackers who have breached a network.Adeversaries have different motivation for data exfilteration which include:
+
 -  Ransomeware
 - Distruption and Sabotage
 - Persistence  and Reicconainsance
 - Espionage.
 
-There are different techniques in Dte exfilteraion :
+There are different techniques in Data exfilteraion :
 
 1. **APT29(Cozy bear**)- HTTPs over legitimate domain i. e encrypting traffic over http to exfilterate govt data
 2. **FIN7-**HTTP post to C2 i .e hide stolen data inside the HTTP Post  request to evoke detection
@@ -14,6 +15,7 @@ There are different techniques in Dte exfilteraion :
 5. APT 10 : cloud to cloud ie  exfilterion throigh the cloud serviuce providers;
 
 Type of Exfilteration are:
+
 **Networkbased exfiletarion:**( http,https,dns tunnelling,ICMO covert,) to analise this look into the FIREWALL,PROXY, WEBGATEWAY,DNS LOG.
 **Hostbased Exfilteration**  : (powershell,ADS,) analize this look into the sysmon/EDR, window security,linux,removable media.
 **Cloud based Exfilteration**: (S3 PutObject / multipart upload, Azure Blob uploads, Google Cloud Storage objects. Insert, Drive/SharePoint external sharing.)(Cloud trail,Azure activities)
