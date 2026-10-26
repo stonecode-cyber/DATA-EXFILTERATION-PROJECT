@@ -32,9 +32,11 @@ In the screenshot above  we can see the uspicious looking domains with a huge qu
 _**index="data_exfil" sourcetype="DNS_logs" | stats count by src_ip**_  s shown below:
 
 <img width="488" height="329" alt="Image" src="https://github.com/user-attachments/assets/55791edc-d0fa-4ac4-94e5-8121de1a3aa5" />
+
  I then filter the siuspicious using the  query : _**index="data_exfil" sourcetype="dns_logs" | stats count by query | sort -count**_ 
 
 <img width="485" height="332" alt="Image" src="https://github.com/user-attachments/assets/f1457248-8049-4327-9d7b-093d2a983061" />/
+
  As shown above the suspicios domain is  _**tunnelcorp.net**_
 
 **TASK 2: How many suspicious traffic/logs related to dns tunneling were observed?**
@@ -42,6 +44,7 @@ _**index="data_exfil" sourcetype="DNS_logs" | stats count by src_ip**_  s shown 
 I analyse the output  using the query _index="data_exfil" sourcetype="DNS_logs" | where len(query) > 30_ looking for traffic which len is greater thsn 30. This give an outputv of 315.
 
 <img width="482" height="364" alt="Image" src="https://github.com/user-attachments/assets/e857b331-882b-49aa-82c2-7a27560fab28" />
+
 
 TASK 3: Which local IP sent the maximum number of suspicious requests?
 
